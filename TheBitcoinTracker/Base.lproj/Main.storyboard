@@ -1,24 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TheBitcoinTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="odc-Vw-Vs4">
+                                <rect key="frame" x="20" y="71" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="A5v-vW-ak4"/>
+                                    <constraint firstAttribute="width" secondItem="odc-Vw-Vs4" secondAttribute="height" multiplier="1:1" id="Bf5-Zz-pGj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orA-Hh-J2o">
+                                <rect key="frame" x="110" y="92.5" width="52" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eth" translatesAutoresizingMaskIntoConstraints="NO" id="bPP-ng-vRw">
+                                <rect key="frame" x="20" y="149" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="4u6-CN-aDe"/>
+                                    <constraint firstAttribute="width" secondItem="bPP-ng-vRw" secondAttribute="height" multiplier="1:1" id="B00-el-9Ws"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7B-ea-uRF">
+                                <rect key="frame" x="110" y="170.5" width="52" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="euro" translatesAutoresizingMaskIntoConstraints="NO" id="xti-zG-rEC">
+                                <rect key="frame" x="20" y="227" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xti-zG-rEC" secondAttribute="height" multiplier="1:1" id="12O-OC-pfd"/>
+                                    <constraint firstAttribute="height" constant="70" id="jye-dA-KVB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFQ-hg-FmK">
+                                <rect key="frame" x="110" y="248.5" width="52" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="india" translatesAutoresizingMaskIntoConstraints="NO" id="alp-oO-hQg">
+                                <rect key="frame" x="20" y="305" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="BNc-5T-g2R"/>
+                                    <constraint firstAttribute="width" secondItem="alp-oO-hQg" secondAttribute="height" multiplier="1:1" id="WVT-4l-6dF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoK-Jx-bsG">
+                                <rect key="frame" x="110" y="326.5" width="52" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recently Updated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAE-xi-0Ih">
+                                <rect key="frame" x="122" y="439.5" width="170.5" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="orA-Hh-J2o" firstAttribute="centerY" secondItem="odc-Vw-Vs4" secondAttribute="centerY" id="193-A2-jHV"/>
+                            <constraint firstItem="alp-oO-hQg" firstAttribute="width" secondItem="alp-oO-hQg" secondAttribute="height" multiplier="1:1" id="3mc-VD-cuk"/>
+                            <constraint firstItem="vFQ-hg-FmK" firstAttribute="leading" secondItem="xti-zG-rEC" secondAttribute="trailing" constant="20" id="45M-Qa-EGG"/>
+                            <constraint firstItem="xti-zG-rEC" firstAttribute="top" secondItem="bPP-ng-vRw" secondAttribute="bottom" constant="8" symbolic="YES" id="EsX-DO-dig"/>
+                            <constraint firstItem="bPP-ng-vRw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GNh-PY-oXQ"/>
+                            <constraint firstItem="eoK-Jx-bsG" firstAttribute="leading" secondItem="alp-oO-hQg" secondAttribute="trailing" constant="20" id="I1F-G5-z28"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="orA-Hh-J2o" secondAttribute="trailing" symbolic="YES" id="JsH-Lj-ih1"/>
+                            <constraint firstItem="odc-Vw-Vs4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="SVR-0X-cVS"/>
+                            <constraint firstItem="eoK-Jx-bsG" firstAttribute="centerY" secondItem="alp-oO-hQg" secondAttribute="centerY" id="TmZ-R9-VNZ"/>
+                            <constraint firstItem="bPP-ng-vRw" firstAttribute="width" secondItem="bPP-ng-vRw" secondAttribute="height" multiplier="1:1" id="Toe-oG-xIB"/>
+                            <constraint firstItem="xti-zG-rEC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VFO-eT-YIs"/>
+                            <constraint firstItem="vFQ-hg-FmK" firstAttribute="centerY" secondItem="xti-zG-rEC" secondAttribute="centerY" id="cCY-k9-m3E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="c7B-ea-uRF" secondAttribute="trailing" symbolic="YES" id="ecn-17-fIA"/>
+                            <constraint firstItem="alp-oO-hQg" firstAttribute="top" secondItem="xti-zG-rEC" secondAttribute="bottom" constant="8" symbolic="YES" id="f3G-3D-w5o"/>
+                            <constraint firstItem="xti-zG-rEC" firstAttribute="width" secondItem="xti-zG-rEC" secondAttribute="height" multiplier="1:1" id="fUB-zS-msp"/>
+                            <constraint firstItem="c7B-ea-uRF" firstAttribute="leading" secondItem="bPP-ng-vRw" secondAttribute="trailing" constant="20" id="fmy-BI-HPY"/>
+                            <constraint firstItem="orA-Hh-J2o" firstAttribute="leading" secondItem="odc-Vw-Vs4" secondAttribute="trailing" constant="20" id="glW-IG-467"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vFQ-hg-FmK" secondAttribute="trailing" symbolic="YES" id="j6U-Sn-faR"/>
+                            <constraint firstItem="alp-oO-hQg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="j7f-7R-BmT"/>
+                            <constraint firstItem="c7B-ea-uRF" firstAttribute="centerY" secondItem="bPP-ng-vRw" secondAttribute="centerY" id="lFv-vg-kWt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eoK-Jx-bsG" secondAttribute="trailing" symbolic="YES" id="oFz-Lb-RfZ"/>
+                            <constraint firstItem="odc-Vw-Vs4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="p5l-WN-6Lo"/>
+                            <constraint firstItem="tAE-xi-0Ih" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="qFv-bm-grQ"/>
+                            <constraint firstItem="tAE-xi-0Ih" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qwt-H6-R4P"/>
+                            <constraint firstItem="bPP-ng-vRw" firstAttribute="top" secondItem="odc-Vw-Vs4" secondAttribute="bottom" constant="8" symbolic="YES" id="vOP-dj-L1e"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bitcoinPrice" destination="orA-Hh-J2o" id="TUv-5U-uqs"/>
+                        <outlet property="ethPrice" destination="c7B-ea-uRF" id="Lqf-TV-1Yk"/>
+                        <outlet property="euroPrice" destination="vFQ-hg-FmK" id="cav-Wa-9bx"/>
+                        <outlet property="inrPrice" destination="eoK-Jx-bsG" id="52q-En-bkW"/>
+                        <outlet property="recentlyUpdated" destination="tAE-xi-0Ih" id="Jep-P7-Ja9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="35" y="98"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bitcoin" width="4096" height="4096"/>
+        <image name="eth" width="3258" height="3258"/>
+        <image name="euro" width="512" height="512"/>
+        <image name="india" width="1600" height="1236"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
